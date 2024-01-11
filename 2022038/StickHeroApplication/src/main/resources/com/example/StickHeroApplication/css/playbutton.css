@@ -1,0 +1,5 @@
+.hoverable-text:hover {
+    -fx-fill: red; /* Set your desired hover color */
+    -fx-text-fill: red;
+    -fx-cursor: hand; /* Optional: Change cursor on hover to indicate it's clickable */
+}

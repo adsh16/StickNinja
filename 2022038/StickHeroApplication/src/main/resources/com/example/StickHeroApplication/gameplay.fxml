@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="gameScreen" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="bodybg" stylesheets="@css/background.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.StickHeroApplication.gameplayController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#63ffe7" height="47.0" layoutX="164.0" layoutY="3.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="227.0" />
+      <ImageView fx:id="stickHero" fitHeight="79.0" fitWidth="82.0" layoutX="85.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true" y="37.0">
+         <image>
+            <Image url="@images/character.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="score" layoutX="324.0" layoutY="1.0" text="00" textFill="#262626">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Label fx:id="gameOverLabel" layoutX="177.0" layoutY="133.0" opacity="0.0" styleClass="GameOverText" stylesheets="@css/background.css" text="Game Over">
+         <font>
+            <Font size="38.0" />
+         </font></Label>
+      <Label layoutX="186.0" layoutY="-1.0" text="Score : ">
+         <font>
+            <Font name="Arial" size="40.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="0.05203045532107353" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006729475100942127">
+                     <color>
+                        <Color green="0.05203045532107353" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.2903817746118241">
+                     <color>
+                        <Color red="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.49369398942979986">
+                     <color>
+                        <Color red="0.13333334028720856" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.7367888914420772">
+                     <color>
+                        <Color red="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.03333333507180214" green="0.12999999523162842" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+   </children>
+</Pane>

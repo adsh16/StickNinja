@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="bodybg" stylesheets="@css/homescreen_background.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.StickHeroApplication.homescreenController">
+   <Label layoutX="56.0" layoutY="80.0" text="STICK" textAlignment="CENTER" textFill="WHITE">
+      <font>
+         <Font name="Japanese 3017" size="70.0" />
+      </font>
+   </Label>
+   <Label layoutX="65.0" layoutY="133.0" text="Ninja" textFill="WHITE">
+      <font>
+         <Font name="Japanese 3017" size="63.0" />
+      </font>
+   </Label>
+   <ToggleButton fx:id="muteButton" layoutX="541.0" layoutY="339.0" onAction="#playMusic" prefHeight="59.0" prefWidth="53.0" styleClass="button" stylesheets="@css/soundbutton.css">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </ToggleButton>
+   <Label layoutX="555.0" layoutY="380.0" text="Mute" />
+   <ImageView fx:id="muteImageView" fitHeight="34.0" fitWidth="35.0" layoutX="549.0" layoutY="347.0" onMouseClicked="#playMusic">
+      <image>
+         <Image url="@images/SoundOn.png" />
+      </image>
+   </ImageView>
+   <ToggleButton fx:id="muteButton1" layoutX="536.0" layoutY="8.0" onAction="#exitGame" prefHeight="59.0" prefWidth="53.0" styleClass="button" stylesheets="@css/soundbutton.css">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </ToggleButton>
+   <Label layoutX="553.0" layoutY="49.0" text="Exit" />
+   <ImageView fx:id="muteImageView1" fitHeight="57.0" fitWidth="56.0" layoutX="536.0" layoutY="5.0">
+      <image>
+         <Image url="@images/Exit.png" />
+      </image>
+   </ImageView>
+   <Text fx:id="playText" fill="WHITE" layoutX="91.0" layoutY="292.0" onMouseClicked="#switchtoGameScreen" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="hoverable-text" text="Play">
+      <font>
+         <Font name="Japanese 3017" size="44.0" />
+      </font>
+   </Text>
+   <Text fill="WHITE" layoutX="60.0" layoutY="341.0" stroke="YELLOW" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="hoverable-text" text="Settings">
+      <font>
+         <Font name="Japanese 3017" size="38.0" />
+      </font>
+   </Text>
+   <Line endX="100.0" startX="-100.0" />
+   <Line endX="29.300018310546875" endY="362.89288330078125" layoutX="117.0" layoutY="-113.0" startX="29.300018310546875" startY="298.0" stroke="WHITE" />
+   <Line endX="29.300018310546875" endY="362.89288330078125" layoutX="117.0" layoutY="47.0" startX="29.300018310546875" startY="307.4000244140625" stroke="WHITE" />
+   <Line endX="29.300018310546875" endY="365.0" layoutX="116.0" layoutY="-293.0" startX="29.300018310546875" startY="293.0" stroke="WHITE" />
+</AnchorPane>
